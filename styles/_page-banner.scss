@@ -1,0 +1,72 @@
+.page-image-section {
+  position: relative;
+  // max-height: 890px;
+  height: calc(100vh + 100px );
+  background-color: rgba(#232b36, 0.6);
+  @media (max-width: 767px) {
+    height: 100vh;
+  }
+}
+
+.page-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  @include bg-image();
+  z-index: -1;
+}
+
+.align-content-center {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.page-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: $font-family-primary;
+  font-size: $text-size-large;
+  line-height: 1;
+  letter-spacing: 8px;
+
+  max-width: 790px;
+  text-align: center;
+
+  margin-bottom: 80px;
+
+  @media (max-width: 1024px) and (min-width: 768px)  {
+    font-size: $text-size-large - 10px;
+    letter-spacing: 6.8px;
+  }
+  @media (max-width: 767px) {
+    font-size: $text-size-large - 32px;
+    letter-spacing: 4px;
+  }
+ 
+
+
+}
+
+.primary-button {
+  @include primary-button(48px);
+  @include background-pallet(76deg, #e72d70, #ee8e15);
+  //font-family: $font-family-primary;
+  color: #ffffff;
+  //font-size: $text-size-link;
+  //font-weight: bold;
+  //outline-width: 0;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.overlay-top {
+  position: relative;
+  margin-top: -100px;
+}
+

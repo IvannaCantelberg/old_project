@@ -1,0 +1,28 @@
+@mixin primary-button($border-radius) {
+  display: inline-block;
+  padding: 16px 48px;
+  border-radius: $border-radius;
+  text-transform: uppercase;
+  font-size: $text-size-link;
+  font-family: $font-family-primary;
+  font-weight: bold;
+  outline-width: 0;
+}
+
+@mixin background-pallet($degree,  $first-color, $second-color ) {
+  background-image: linear-gradient($degree, $first-color, $second-color);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 10px 50px 0 rgba($second-color, 0.4);
+  transition: box-shadow $hover-transition-function .23s;
+  &:hover{
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15), 0 30px 60px 0 rgba(238, 142, 21, 0.15);
+    
+  }
+}
+
+@mixin bg-image(){
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}

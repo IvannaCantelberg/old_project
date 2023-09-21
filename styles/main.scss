@@ -1,0 +1,42 @@
+$font-family-primary: 'Play', sans-serif;
+$font-family-secondary: 'Roboto', sans-serif;
+
+$text-size-large: 64px;
+$text-size-header: 24px;
+$text-size-title: 20px;
+$text-size-content: 16px;
+$text-size-nav: 16px;
+$text-size-link: 14px;
+
+$text-size-footer-header: 20px;
+$text-size-footer-title: 16px;
+
+$color-primary: #e72d70;
+$color-secondary: #ee8e15;
+
+$footer-bg: #eeeeee;
+
+$hover-transition-function: ease; //cubic-bezier(0.95, 0.05, 0.795, 0.035) ;
+
+// a{
+//   transition: cubic-bezier(0.95, 0.05, 0.795, 0.035)
+// }
+@import "mixins";
+
+@import "page-sections";
+@import "header";
+@import "page-banner";
+@import "slider";
+
+@import "contact-from";
+
+@import "cards";
+@import "circles";
+
+@import "footer";
+
+body {
+  line-height: 1.2;
+  font-family: $font-family-secondary;
+  font-size: 14px;
+}
